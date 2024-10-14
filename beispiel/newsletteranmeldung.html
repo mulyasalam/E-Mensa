@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+- Praktikum DBWT. Autoren:
+- Nathan Matthew, Kurnia, 3573660
+- Muhammad Mulya, Salam, 3592614
+-->
+<html lang="de">
+<head>
+  <title>Erstes Formular</title>
+</head>
+<body>
+<form action="demo.php" method="post">
+  <fieldset>
+    <legend>Anmeldung</legend>
+    Anrede<br>
+    <input type="radio" id="frau" name="anrede" value="frau">
+    <label for="frau">Frau</label><br>
+    <input type="radio" id="mann" name="anrede" value="mann">
+    <label for="mann">Mann</label><br><br>
+    Vorname*<br>
+    <input type="text" id="vorname" name="benutzer" placeholder="Bitte geben Sie Ihren Vornamen ein." size="40">
+    <br><br>
+    Nachname*<br>
+    <input type="text" id="nachname" name="benutzer" placeholder="Bitte geben Sie Ihren Nachnamen ein." size="40">
+    <br><br>
+
+    <label for="absender">E-Mail*</label><br>
+    <input name="absender" id="absender" placeholder="Bitte geben Sie Ihre E-Mail ein." size="40">
+    <br><br>
+
+    <label for="zeit">Benachrichtigungsinterval</label><br>
+    <select name="zeit" id="zeit">
+      <option value="tag">Tag</option>
+      <option value="woche">Woche</option>
+      <option value="monat">Monat</option>
+    </select>
+    <br><br>
+    <label for="anfrage">Nachricht:</label>
+    <br>
+    <textarea name="anfrage" id="anfrage" rows="10" cols="40"></textarea>
+    <br><br>
+    <input type="checkbox" id="datenschutz" name="datenschutz" value="datenschutz">
+    <label for="datenschutz">Datenschutzhinweise gelesen</label><br><br>
+    <input type="submit" value="Abschicken">
+    <br><br>*)Eingaben sind Pflicht.
+  </fieldset>
+
+</form>
+</body>
+</html>

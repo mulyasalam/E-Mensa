@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+- Praktikum DBWT. Autoren:
+- Nathan Matthew, Kurnia, 3573660
+- Muhammad Mulya, Salam, 3592614
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      .grid3row{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+      }
+      .grid3collum{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+      }
+      .grid-item{
+        padding:10px;
+        text-align:left;
+        border:1px solid #888888;
+      }
+      .grid-itemcenter{
+        text-align: center;
+        padding: 10px;
+        border:1px solid #555555;
+      }
+      .boxed2{
+        display: grid;
+        text-align: center;
+        border:1px solid #555555;
+        padding: 10px;
+        margin-right: 250px;
+        margin-left: 250px;
+      }
+  </style>
+</head>
+<body>
+<div class="grid3row">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+</div>
+<div class="grid3collum">
+    <div class="grid-item">1</div>
+    <div class="grid-itemcenter">2</div>
+    <div class="grid-itemcenter">3</div>
+</div>
+<p class="boxed2">4</p>
+
+
+</body>
+</html>

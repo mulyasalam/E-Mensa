@@ -1,0 +1,164 @@
+
+#header{
+  display:grid;
+  grid-template-columns: 350px auto 350px;
+  text-align: center;
+  gap: 10px;
+  margin: 10px;
+}
+#header > div{
+  border: 3px solid turquoise;
+
+}
+#box{
+  border-top: 2px solid black;
+  padding-top: 10px;
+
+  display:grid;
+  grid-template-columns: 350px auto 350px;
+  gap: 10px;
+  margin: 10px;
+}
+#imageEssen{
+  grid-column-start: 2;
+  width: 100%;
+}
+
+#image{
+  width: auto;
+  height: 300px;
+}
+h2{
+  grid-column-start: 2;
+  font-weight: bold;
+  font-size: 25px;
+
+}
+h3{
+  grid-column-start: 2;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+.pborder{
+  grid-column-start: 2;
+  border: 2px solid black;
+  padding: 5px;
+}
+
+footer ul{
+  float:left;
+  text-align: center;
+  padding-left: 250px;
+}
+footer ul li{
+  border-right: 3px solid black;
+  border-right-width: 2px;
+  list-style-type: none;
+  display: inline;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#footercenter{
+  text-align: center;
+  margin-left:30%;
+}
+#wichtig{
+  grid-column-start: 2;
+  padding-left: 300px;
+  text-align: left;
+}
+#logo{
+
+
+  padding-top: 20px;
+}
+#menu{
+  text-align: center;
+}
+#reitermenu{
+
+  list-style-type: none;
+  float:left;
+  margin-top: 45px;
+  font-size: 25px;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+
+}
+#reitermenu li{
+
+  display: inline;
+
+}
+#Essen{
+  text-align: left;
+}
+#GerichtAllergen{
+  grid-column-start: 2;
+  position: relative;
+  width: 70%;
+  left:15%;
+}
+#AllergenÜberschrift{
+  position: relative;
+  left: 30%;
+}
+
+#koestlichkeitenanker{
+  grid-column-start: 2;
+  text-align: center;
+  font-size: 22px;
+}
+#wichtiganker{
+  grid-column-start: 2;
+  font-size : 22px;
+  margin-left: 20%;
+}
+#wichtig{
+  grid-column-start: 2;
+  font-size:16px;
+  margin-left:20%;
+}
+#ankuendigunganker{
+  grid-column-start: 2;
+  text-align: center;
+  font-size: 24px;
+}
+#AllergenCodes{
+  grid-column-start: 2;
+  text-align: center;
+  font-size:22px;
+}
+#Bild{
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+#Anmeldung{
+  font-size: 20px;
+}
+#Bewertung{
+  font-size: 20px;
+  grid-column-start: 2;
+  text-align: center;
+}
+#BewertungText{
+  font-size: 11px;
+  text-align: center;
+}
+#Bewertungen{
+  font-size: 14px;
+  grid-column-start: 2;
+  text-align: center;
+}
+#BewertungListe {
+  grid-column-start: 2;
+}
+#löschen{
+  grid-column-start: 2;
+  text-align: center;
+}
+#hervorheben{
+  background-color: blue;
+}

@@ -1,0 +1,3 @@
+Daten: 07/11/2023  Zeit: 07:09:19pmWebbrowser: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 IP des Client: 127.0.0.1
+Daten: 08/11/2023  Zeit: 11:14:53amWebbrowser: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 IP des Client: 127.0.0.1
+Daten: 15/11/2023  Zeit: 03:35:00pmWebbrowser: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 IP des Client: 127.0.0.1

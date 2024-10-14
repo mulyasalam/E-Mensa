@@ -1,0 +1,5 @@
+[2023-12-22T01:20:54.807432+00:00] logger.INFO: anmelden erfolgreich [] []
+[2023-12-22T01:21:00.912526+00:00] logger.WARNING: password oder email falsch  [] []
+[2023-12-22T01:21:00.912526+00:00] logger.WARNING: password oder email falsch  [] []
+[2023-12-22T01:21:04.221213+00:00] logger.WARNING: password oder email falsch  [] []
+[2023-12-22T01:21:04.221213+00:00] logger.WARNING: password oder email falsch  [] []

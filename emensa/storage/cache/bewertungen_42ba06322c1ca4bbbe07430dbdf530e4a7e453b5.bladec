@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+ <meta charset="UTF-8">
+ <title>Title</title>
+ <link type="text/css" rel="stylesheet" href="css/bewertungen.css">
+</head>
+<body>
+
+<table id="bewertungenlist">
+ <tr>
+ <td> Name</td>
+ <td> Gericht </td>
+ <td> Bemerkung</td>
+ <td> Sterne</td>
+ <td> Zeit </td>
+ <?php if($admin): ?>
+ <td>Hervorgeben</td>
+ <?php endif; ?>
+ </tr>
+ <?php $__currentLoopData = $bewertungen; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $bewertung): $loop = $this->incrementLoopIndices();  ?>
+ <tr  <?php if($bewertung->hervorgehoben): ?> style="background-color: palevioletred" <?php endif; ?> >
+ <td><?php echo \htmlentities($bewertung->benutzername??'', ENT_QUOTES, 'UTF-8', false); ?></td>
+ <td><?php echo \htmlentities($bewertung->gerichtname??'', ENT_QUOTES, 'UTF-8', false); ?></td>
+ <td><?php echo \htmlentities($bewertung->bemerkung??'', ENT_QUOTES, 'UTF-8', false); ?></td>
+ <td><?php echo \htmlentities($bewertung->sterne_bewertung??'', ENT_QUOTES, 'UTF-8', false); ?></td>
+ <td><?php echo \htmlentities($bewertung->bewertung_zeitpunkt??'', ENT_QUOTES, 'UTF-8', false); ?></td>
+ <?php if($admin): ?>
+ <?php if($bewertung->hervorgehoben): ?>
+ <td><a href="<?php echo \htmlentities('/bewertungen?benutzerid='.$bewertung->benutzer_id.'&id='.$bewertung->id.'&hervor='.$bewertung->hervorgehoben.'&admin='.$admin??'', ENT_QUOTES, 'UTF-8', false); ?>">Hervorheben abwählen</a></td>
+ <?php else: ?>
+ <td><a href="<?php echo \htmlentities('/bewertungen?benutzerid='.$bewertung->benutzer_id.'&id='.$bewertung->id.'&hervor='.$bewertung->hervorgehoben.'&admin='.$admin??'', ENT_QUOTES, 'UTF-8', false); ?>">Hervorheben wählen</a></td>
+ <?php endif; ?>
+ <?php endif; ?>
+ </tr>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+
+</table>
+</body>
+</html>

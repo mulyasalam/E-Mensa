@@ -1,0 +1,20 @@
+<html>
+<!-- header -->
+<header>
+
+ <title><?php echo $this->yieldContent('title'); ?></title>
+ <?php echo $this->yieldContent('header'); ?>
+</header>
+<!-- main -->
+<main>
+ <div class="content">
+ <?php echo $this->yieldContent('content'); ?>
+ </div>
+
+</main>
+<!-- footer -->
+<footer>
+ <?php echo $this->yieldContent('footer'); ?>
+
+</footer>
+</html>
